@@ -15,11 +15,11 @@ type Chat struct {
 	Params    qwenmodel.Parameters
 }
 
-func NewWithDefaultChat(apiKey string) *Chat {
+func NewWithDefaultChat(apiKey string, model string) *Chat {
 	return &Chat{
 		BaseUrl:   qwenmodel.ChatBaseUrl,
 		ApiKey:    apiKey,
-		QWenModel: qwenmodel.ChatQWenModel,
+		QWenModel: model,
 		Params:    qwenmodel.Parameters{EnableSearch: true},
 	}
 }
