@@ -42,7 +42,8 @@ type Usage struct {
 }
 
 type Response struct {
-	Output    Output `json:"output"`
-	Usage     Usage  `json:"usage"`
-	RequestID string `json:"request_id"`
+	Message   Messages `json:"message"`
+	Output    Output   `json:"output"`
+	Usage     Usage    `json:"usage"`
+	RequestID string   `json:"request_id"`
 }
